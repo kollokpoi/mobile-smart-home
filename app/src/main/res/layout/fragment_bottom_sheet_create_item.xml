@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:ignore="UselessParent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/corner_default_radius">
+            <ImageView
+                android:id="@+id/iconImageView"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/circled_semi_black"/>
+            <TextView
+                android:id="@+id/chooseImageTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pick_image_hint"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                style="@style/opposite_color_title"/>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/containerToBlur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            style="@style/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/main_color_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_hint" />
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_hint"
+                android:inputType="text" />
+            <TextView
+                style="@style/main_color_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ip_hint" />
+            <EditText
+                android:id="@+id/ipEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:hint="@string/ip_hint"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/createBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/create_hint" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Smart Home</string>
+    <string name="title_activity_login" translatable="false">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="login_hint">"Login"</string>
+    <string name="password_hint">"Password"</string>
+    <string name="api_ip" translatable="false">http://kollokpoi.tplinkdns.com:5000/</string>
+    <string name="image_item_hint">Image</string>
+    <string name="create_hint">Create</string>
+    <string name="start_command">Start</string>
+    <string name="commands">Commands</string>
+    <string name="pick_image_hint">Choose image</string>
+    <string name="name_hint">Name</string>
+    <string name="ip_hint">IP Address</string>
+    <string name="ip_error">Invalid IP Address</string>
+    <string name="empty_fields_error">Fill all fields</string>
+    <string name="command_to_send_hint">Command to send</string>
+    <string name="should_return_hint">Should return</string>
+    <string name="verb_hint">Verb</string>
+    <string name="verbs_list_hint">Verbs</string>
+    <string name="delete">Delete</string>
+    <string name="items_hint">Items</string>
+    <string name="action_settings">Settings</string>
+    <string name="prompt_hint">Prompt</string>
+    <string name="styles_hint">Styles</string>
+    <string name="image_generator_hint">Image generator</string>
+    <string name="save_hint">Save</string>
+    <string name="error_hint">Error</string>
+    <string name="online_hint" translatable="false">online</string>
+    <string name="offline_hint" translatable="false">offline</string>
+    <string name="command_json_body">Command body</string>
+</resources>

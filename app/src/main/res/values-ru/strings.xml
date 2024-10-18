@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Умный дом</string>
+    <string name="prompt_email">Электронная почта</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="action_sign_in">Войти или зарегистрироваться</string>
+    <string name="action_sign_in_short">Вход</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="invalid_username">Неправильный логин</string>
+    <string name="invalid_password">Пароль длиннее 5и знаков</string>
+    <string name="login_failed">Ошибка входа</string>
+    <string name="login_hint">Логин</string>
+    <string name="password_hint">Пароль</string>
+    <string name="image_item_hint">Изображение</string>
+    <string name="create_hint">Создать</string>
+    <string name="start_command">Запустить</string>
+    <string name="commands">Действия</string>
+    <string name="pick_image_hint">Выбрать изображение</string>
+    <string name="name_hint">Название</string>
+    <string name="ip_hint">Айпишник</string>
+    <string name="ip_error">Ошибочный IP</string>
+    <string name="empty_fields_error">Заполни все поля</string>
+    <string name="command_to_send_hint">Команда для отправки</string>
+    <string name="should_return_hint">Будет ли ответ</string>
+    <string name="verb_hint">Голосовая команда</string>
+    <string name="verbs_list_hint">Голосовые команды</string>
+    <string name="delete">Удалить</string>
+    <string name="items_hint">Элементы</string>
+    <string name="action_settings">Настройки</string>
+    <string name="prompt_hint">Промпт</string>
+    <string name="styles_hint">Стили</string>
+    <string name="image_generator_hint">Генератор изображений</string>
+    <string name="save_hint">Сохранить</string>
+    <string name="error_hint">Ошибка</string>
+    <string name="command_json_body">Тело команды</string>
+</resources>

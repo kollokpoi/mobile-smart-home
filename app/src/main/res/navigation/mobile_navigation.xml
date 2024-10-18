@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_items">
+
+    <fragment
+        android:id="@+id/nav_items"
+        android:name="com.example.myapplication.ui.itemsfragment.ItemsFragment"
+        android:label="@string/items_hint"
+        tools:layout="@layout/fragment_items" />
+    <fragment
+        android:id="@+id/nav_image_generator"
+        android:name="com.example.myapplication.ui.imagegenerator.ImageGeneratorFragment"
+        android:label="@string/image_generator_hint"
+        tools:layout="@layout/fragment_image_generator" />
+</navigation>
