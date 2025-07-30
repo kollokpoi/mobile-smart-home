@@ -37,4 +37,7 @@
     <string name="online_hint" translatable="false">online</string>
     <string name="offline_hint" translatable="false">offline</string>
     <string name="command_json_body">Command body</string>
+    <string name="auth_hint">Auth</string>
+    <string name="fill_password_hint">Fill password</string>
+    <string name="fill_login_hint">Fill login</string>
 </resources>

@@ -8,9 +8,4 @@ class Item(
     var id : Int?=null,
     var image : String? = null,
     var commands:List<Command> = emptyList()
-){
-    fun create(){
-
-    }
-
-}
+)

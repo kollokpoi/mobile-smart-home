@@ -10,9 +10,11 @@ import android.graphics.drawable.LayerDrawable
 import android.view.View
 import android.widget.ImageView
 import android.widget.ProgressBar
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.myapplication.R
 import jp.wasabeef.blurry.Blurry
+import java.time.Duration
 import kotlin.math.roundToInt
 
 class Helpers {
@@ -97,6 +99,25 @@ class Helpers {
                 duration = 500
             }
             heightAnimator.start()
+        }
+
+        fun  createToast(context: Context, resId:Int,duration:Int? = null){
+            val toast = Toast(context)
+            if (duration!=null)
+                toast.duration = duration
+            else
+                toast.duration = Toast.LENGTH_SHORT
+            toast.setText(resId)
+            toast.show();
+        }
+        fun  createToast(context: Context, text:String,duration:Int? = null){
+            val toast = Toast(context)
+            if (duration!=null)
+                toast.duration = duration
+            else
+                toast.duration = Toast.LENGTH_SHORT
+            toast.setText(text)
+            toast.show();
         }
     }
 }

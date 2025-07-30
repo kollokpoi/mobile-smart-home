@@ -5,6 +5,9 @@ import com.example.myapplication.classes.Item
 import com.example.myapplication.classes.Styles
 import com.example.myapplication.classes.Verb
 import com.example.myapplication.models.ImageRequestModel
+import com.example.myapplication.models.LoginRequest
+import com.example.myapplication.models.LoginResponse
+import com.example.myapplication.models.User
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import okhttp3.ResponseBody
@@ -12,6 +15,7 @@ import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.DELETE
 import retrofit2.http.GET
+import retrofit2.http.Header
 import retrofit2.http.Multipart
 import retrofit2.http.POST
 import retrofit2.http.Part
@@ -99,4 +103,11 @@ interface IApi {
     fun getStyles() : Call<List<Styles>>
     @POST("image/generate")
     fun generateImage(@Body model : ImageRequestModel) : Call<ResponseBody>
+
+
+    //user
+    @POST("/user/login")
+    fun login(@Body loginRequest: LoginRequest): Call<LoginResponse>
+    @POST("/checkAuth")
+    fun getUserProfile(@Header("Authorization") token: String): Call<User>
 }

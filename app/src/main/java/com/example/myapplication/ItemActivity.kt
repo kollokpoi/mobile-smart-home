@@ -104,6 +104,7 @@ class ItemActivity : AppCompatActivity() {
         binding.webImageView.setOnClickListener{
             val intent = Intent(this,WebViewActivity::class.java)
             intent.putExtra("id",id)
+            intent.putExtra("name",model.currentItem.value!!.name)
             startActivity(intent)
         }
     }

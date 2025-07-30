@@ -33,4 +33,7 @@
     <string name="save_hint">Сохранить</string>
     <string name="error_hint">Ошибка</string>
     <string name="command_json_body">Тело команды</string>
+    <string name="auth_hint">Авторизация</string>
+    <string name="fill_password_hint">Введите пароль</string>
+    <string name="fill_login_hint">Введите логин</string>
 </resources>

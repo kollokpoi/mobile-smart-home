@@ -6,6 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
+    <FrameLayout
+        android:id="@+id/blurContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/blurView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,26 +29,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="@string/login_hint"
-            android:textFontWeight="800"
-            android:textColor="@color/black"
-            android:textSize="16sp"/>
+            android:textStyle="bold"
+            android:text="@string/auth_hint"
+            android:textColor="@color/main_title_color"
+            android:textSize="20sp"/>
         <EditText
+            android:id="@+id/loginEt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/login_hint"
             android:autofillHints=""
             android:inputType="text" />
         <EditText
+            android:id="@+id/passwordEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password_hint"
             android:inputType="textPassword"
             android:importantForAutofill="no" />
         <Button
+            android:id="@+id/loginBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/login_hint"/>
     </LinearLayout>
+    <include
+        android:id="@+id/loadingElement"
+        layout="@layout/loading_element"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
